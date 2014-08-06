@@ -67,7 +67,7 @@ public class Depth3test {
 			if ((str1.equals("actedIn") || str1.equals("hasWonPrize") || str1.equals("directed") || str1.equals("wasBornIn") || str1.equals("hasGender"))
 				&& (str3.equals("actedIn") || str3.equals("hasWonPrize") || str3.equals("directed") || str3.equals("wasBornIn") || str3.equals("hasGender"))) {
 				System.out.println("t1::" + str1);
-				System.out.println("t2::" + str2);
+				System.out.println("t2::" + str2);	
 				System.out.println("t3::" + str3);
 				double beta = 0.5;
 				
