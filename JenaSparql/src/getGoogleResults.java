@@ -21,7 +21,7 @@ public class getGoogleResults {
 		final HtmlPage htmlpage = webclient.getPage("http://www.google.com.hk/");
 		webclient.setCssEnabled(false);
 		webclient.setJavaScriptEnabled(false);
-		webclient.setRedirectEnabled(true); 
+		webclient.setRedirectEnabled(true);
 				
 		final HtmlForm form = htmlpage.getFormByName("f"); 
 		final HtmlSubmitInput button = form.getInputByValue("Google 搜尋");
