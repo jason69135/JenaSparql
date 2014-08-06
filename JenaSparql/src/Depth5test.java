@@ -11,7 +11,7 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.tdb.TDBFactory;
 
-public class test {
+public class Depth5test {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -71,11 +71,10 @@ public class test {
 			str6 = str6.replace("http://www.w3.org/1999/02/22-rdf-syntax-ns#", "");
 			str7 = str7.replace("http://www.w3.org/1999/02/22-rdf-syntax-ns#", "");
 
-
-			if((str1.equals("actedIn") || str1.equals("hasGender") || str1.equals("hasWonPrize")|| str1.equals("directed") || str1.equals("wasBornIn"))
-			&& (str4.equals("actedIn") || str4.equals("hasGender") || str4.equals("hasWonPrize")|| str4.equals("directed") || str4.equals("wasBornIn"))		
-			&& (str5.equals("actedIn") || str5.equals("hasGender") || str5.equals("hasWonPrize")|| str5.equals("directed") || str5.equals("wasBornIn"))
-			&& (str7.equals("actedIn") || str7.equals("hasGender") || str7.equals("hasWonPrize")|| str7.equals("directed") || str7.equals("wasBornIn"))
+			if((str1.equals("actedIn") || str1.equals("hasWonPrize")|| str1.equals("directed") || str1.equals("wasBornIn"))
+			&& (str4.equals("actedIn") || str4.equals("hasWonPrize")|| str4.equals("directed") || str4.equals("wasBornIn"))		
+			&& (str5.equals("actedIn") || str5.equals("hasWonPrize")|| str5.equals("directed") || str5.equals("wasBornIn"))
+			&& (str7.equals("actedIn") || str7.equals("hasWonPrize")|| str7.equals("directed") || str7.equals("wasBornIn"))
 			){
 				System.out.println("t1::"+str1);
 				System.out.println("t2::"+str2);
@@ -85,15 +84,15 @@ public class test {
 				System.out.println("t6::"+str6);
 				System.out.println("t7::"+str7);
 			}
-//			double aa = google.calInfo(var1, str1, str2);
-//			double bb = google.calInfo(str3, str4, str2);
-//			double cc = google.calInfo(str3, str5, str6);
-//			double dd = google.calInfo(var2, str7, str6);
+			double aa = google.calInfo(var1, str1, str2);
+			double bb = google.calInfo(str3, str4, str2);
+			double cc = google.calInfo(str3, str5, str6);
+			double dd = google.calInfo(var2, str7, str6);
 
-//			System.out.println("aa::"+aa);
-//			System.out.println("bb::"+bb);
-//			System.out.println("cc::"+cc);
-//			System.out.println("dd::"+dd);
+			System.out.println("aa::"+aa);
+			System.out.println("bb::"+bb);
+			System.out.println("cc::"+cc);
+			System.out.println("dd::"+dd);
 		}
 	}
 }
