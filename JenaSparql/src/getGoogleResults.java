@@ -40,7 +40,9 @@ public class getGoogleResults {
 				}
 			}
 		}
+
 		long num = Long.valueOf(str2);
+		System.out.println(str2);
 		return num;
 	}
 
@@ -58,20 +60,23 @@ public class getGoogleResults {
 		double Pinfo = 1;
 		try {
 			if (name1 != null && name2 != null) {
-				if(predicate.equals("<hasGender>")){
+				if(predicate.equals("hasGender")){
 					predicate = "";
 				}
-				if(predicate.equals("<actedIn>")){
+				if(predicate.equals("actedIn")){
 					predicate = "<act>";
 				}
-				if(predicate.equals("<hasWonPrize>")){
+				if(predicate.equals("hasWonPrize")){
 					predicate = "<win>";
 				}
-				if(predicate.equals("<directed>")){
+				if(predicate.equals("directed")){
 					predicate = "<direct>";
 				}
-				if(predicate.equals("<wasBornIn>")){
+				if(predicate.equals("wasBornIn")){
 					predicate = "<bornIn>";
+				}
+				if(predicate.equals("type")){
+					return 0.999;
 				}
 				double a = getNum(getwords.LinkGoogle(name1 + predicate+ name2));
 				double b = getNum(getwords.LinkGoogle(name2));
